@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463906825456",
+    "project_id": "recipe-rover-4f92b",
+    "storage_bucket": "recipe-rover-4f92b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463906825456:android:9a4376f4fd1e7c14c68e35",
+        "android_client_info": {
+          "package_name": "com.example.reciperover"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAplbCDUIt45uV7CXKuP5lkNiy_KbCMjQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

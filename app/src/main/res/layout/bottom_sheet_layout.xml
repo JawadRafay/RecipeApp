@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+
+    >
+
+    <TextView
+        android:id="@+id/ingredientsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enter_ingredients"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <RelativeLayout
+        android:id="@+id/filterIngredientsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ingredientsText"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        >
+        <EditText
+            android:id="@+id/filterIngredientsEdtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/custom_edittxt"
+            android:hint="@string/ingredients"
+            android:drawableStart="@drawable/recipe_type"
+            android:drawablePadding="10dp"
+            android:layout_toStartOf="@id/showFilterIngredientsBtn"
+            android:layout_marginEnd="5dp"
+            />
+        <ImageButton
+            android:id="@+id/showFilterIngredientsBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add_filter"
+            android:background="@drawable/custom_start_button"
+            />
+
+    </RelativeLayout>
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/filterChipGroupIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterIngredientsLayout"
+        android:layout_marginTop="5dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/filteredIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterChipGroupIngredients"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_start_button"
+        android:text="@string/filter_ingredient"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        style="@style/LowercaseButton"
+        android:padding="10dp"
+        android:drawableStart="@drawable/fiter_recipe"
+        android:drawablePadding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+</RelativeLayout>

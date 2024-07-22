@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ShowRecipeDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/bacBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/back_arrow"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/showRecipeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/recipe_detail"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/recipeDetailCard"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/showRecipeTxt"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/showRecipeImage"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="fitXY" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/showRecipeNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/recipe_name"
+            android:textColor="@color/light_grey"
+            android:layout_below="@id/recipeDetailCard"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showRecipeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/recipeDetailCard"
+            android:layout_toEndOf="@id/showRecipeNameTxt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:id="@+id/showTypeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/recipe_type"
+            android:textColor="@color/light_grey"
+            android:layout_below="@id/showRecipeNameTxt"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/showRecipeNameTxt"
+            android:layout_toEndOf="@id/showTypeTxt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:id="@+id/showTimeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/show_time"
+            android:textColor="@color/light_grey"
+            android:layout_below="@id/showTypeTxt"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/showType"
+            android:layout_toEndOf="@id/showTimeTxt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:id="@+id/mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/showType"
+            android:layout_toEndOf="@id/showTime"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:text="mins"
+            />
+        <TextView
+            android:id="@+id/showDiffTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/difficulty"
+            android:textColor="@color/light_grey"
+            android:layout_below="@id/showTimeTxt"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/showTimeTxt"
+            android:layout_toEndOf="@id/showDiffTxt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/ingPrcLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showDiff"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/ingredientsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_start_button"
+                android:text="@string/ingredients"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                style="@style/LowercaseButton"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:id="@+id/procedureBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_start_button"
+                android:text="@string/procedure"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                style="@style/LowercaseButton"
+                android:layout_weight="1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/showIngredientsChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingPrcLayout"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/procedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingPrcLayout"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</ScrollView>

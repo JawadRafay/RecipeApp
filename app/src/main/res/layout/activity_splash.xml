@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Splash"
+    android:background="@drawable/bgsplash"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_logo"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="100K+ Premium Recipe"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="GET"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        />
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_2"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"
+        android:text="COOKING"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        />
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_3"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Simple way to find Tasty Recipe"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        />
+
+</RelativeLayout>

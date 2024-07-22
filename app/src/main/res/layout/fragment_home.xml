@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:padding="15dp"
+    tools:context=".Fragments.Home">
+
+    <TextView
+        android:id="@+id/profileTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello User"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/whatMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileTxt"
+        android:text="What are you cooking today?"
+        android:textColor="@color/light_grey"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userImg"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/custom_search_view"
+        android:theme="@style/queryHintColor"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search recipe"
+        app:searchIcon="@drawable/search_icon"
+        android:layout_toStartOf="@id/filterIngredients"
+        />
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/filterIngredients"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/userImg"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/fiter_recipe"
+        android:background="@drawable/custom_start_button"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/prof1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/showRecipeRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchRecipe"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

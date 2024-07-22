@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Recipe Rover</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id" translatable="false">463906825456-9re2d59op0tq856n3qnq3dg5e06ofv4u.apps.googleusercontent.com</string>
+    <string name="edit_recipe">Edit Recipe</string>
+    <string name="edit_recipe_image">Edit Recipe Image</string>
+    <string name="new_recipe_name">New Recipe Name</string>
+    <string name="recipe_detail">Recipe Detail</string>
+    <string name="recipe_image">Recipe Image</string>
+    <string name="recipe_name">Recipe Name :</string>
+    <string name="recipe_name_here">Recipe Name Here</string>
+    <string name="recipe_type">Recipe Type :</string>
+    <string name="recipe_type_here">Recipe Type Here</string>
+    <string name="show_time">Recipe Time :</string>
+    <string name="recipe_time_here">Recipe Time Here</string>
+    <string name="difficulty">Difficulty :</string>
+    <string name="difficulty_here">Difficulty Here</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="procedure">Procedure</string>
+    <string name="your_favorites_recipe">Your Favorites Recipe</string>
+    <string name="enter_ingredients">Enter Ingredients</string>
+    <string name="filter_ingredient">Filter Ingredient</string>
+    <string-array name="spinner_item">
+        <item>Choose Type</item>
+        <item>Pakistani</item>
+        <item>Italian</item>
+        <item>Indian</item>
+    </string-array>
+</resources>
